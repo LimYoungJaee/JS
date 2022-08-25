@@ -1,0 +1,21 @@
+# 아파치 다운로드
+sudo apt install apache2
+
+# 파일 만들기
+/var/www/html/sudo nano abc.html
+ -> html 코딩
+
+# 확인
+리눅스 -> 127.0.0.1/abc.html
+
+# virtualBox 설정
+설정 - 네트워크 - 고급 - 포트포워딩
+ -> 이름 / 호스트 포트(일반 컴퓨터) ex : 10000 / 게스트 IP : 10.0.2.15 / 게스트 포트 80
+사용법 : 127.0.0.1:10000/abc.html
+
+## 보통 호스트 포트 : 80 / 게스트 포트 80으로 통일해서 일반 컴퓨터에서 ip/파일명
+ex : 127.0.0.1/abc.html
+
+# 파일옮기기
+현재 ~/다운로드 라고 가정하였을때, a.jpeg를 /var/www/html/exam/img로 옮기기
+-> mv a.jpeg /var/www/html/exam/img
